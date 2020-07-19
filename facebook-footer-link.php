@@ -14,8 +14,16 @@
      exit;
  }
 
+ // Globabl Options Variable
+ $ffl_options = get_option('ffl_settings');
+
 // Load Scripts
 require_once(plugin_dir_path(__FILE__).'/includes/facebook-footer-link-scripts.php');
 
 // Load Content
 require_once(plugin_dir_path(__FILE__).'/includes/facebook-footer-link-content.php');
+
+// Load Settings if only in Admin side
+if(is_admin()){
+    require_once(plugin_dir_path(__FILE__).'/includes/facebook-footer-link-settings.php');
+}
