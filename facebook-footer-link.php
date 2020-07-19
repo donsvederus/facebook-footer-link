@@ -14,3 +14,8 @@
      exit;
  }
 
+// Load Scripts
+require_once(plugin_dir_path(__FILE__).'/includes/facebook-footer-link-scripts.php');
+
+// Load Content
+require_once(plugin_dir_path(__FILE__).'/includes/facebook-footer-link-content.php');
