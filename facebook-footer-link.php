@@ -14,7 +14,7 @@
      exit;
  }
 
- // Globabl Options Variable
+ // Global Options Variable
  $ffl_options = get_option('ffl_settings');
 
 // Load Scripts
